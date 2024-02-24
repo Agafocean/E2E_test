@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairs game</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="open-pairs.js"></script>
+</head>
+
+<body>
+    <div id="startGame" class="startgame">
+        <p>Number of cards vertically/horizontally</p>
+        <p>(even number from 2 to 10)</p>
+        <input id="startGameInput" type="number" min="2" max="10" step="2" value="4" onkeypress="return false">
+        <button id="buttonStart" class="buttonStart">Start game</button>
+    </div>
+    <div class="container">
+        <div id="deck" class="deck"></div>
+    </div>
+    <p id="timeover" class="timeover">TIME IS OVER</p>
+    <button id="buttonMore" class="buttonMore">one more game</button>
+</body>
+
+</html>
