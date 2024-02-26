@@ -51,7 +51,7 @@ describe('Pairs game', () => {
     });
   });
 
-  it('Если не пара, то обе карты закрываются через 1200мс', () => {
+  it('If not match, both cards get closed after 1200мс', () => {
     cy.get('.back').then(($els) => {
       const nums = Array.from($els, (el) => el.innerText);
       let j = 0;
